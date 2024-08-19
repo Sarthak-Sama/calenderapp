@@ -45,10 +45,10 @@ function EditEvent() {
     <div className="absolute w-screen h-screen flex justify-center items-center">
       <div
         onClick={() => navigate(-1)}
-        className="w-full h-full absolute z-[9] bg-[#000000c5]"
+        className="w-full h-full absolute z-[99] bg-[#000000c5]"
       />
       {eventToEdit ? (
-        <div className="absolute w-full max-w-md mx-auto p-6 bg-white shadow-md rounded-md z-[99]">
+        <div className="absolute w-full max-w-md  mx-auto p-6 bg-white shadow-md rounded-md z-[999]">
           <h2 className="text-2xl font-bold mb-4">Edit Event</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">

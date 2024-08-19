@@ -45,9 +45,9 @@ function AddEvent() {
     <div className="absolute w-full h-full flex justify-center items-center">
       <div
         onClick={handleNav}
-        className="w-full h-full z-[9] absolute bg-[#000000c5]"
+        className="w-full h-full z-[99] absolute bg-[#000000c5]"
       />
-      <div className="w-full max-w-md relative mx-auto p-6 bg-white shadow-md rounded-md z-[99]">
+      <div className="w-full max-w-md max-h-[80%] -translate-y-[5%] abolute mx-auto p-6 bg-white shadow-md rounded-md z-[999]">
         <h2 className="text-2xl font-bold mb-4">Add New Event</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
