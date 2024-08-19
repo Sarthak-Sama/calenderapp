@@ -24,7 +24,7 @@ function EventCard({ data, index }) {
         to={`/edit-event/${selectedMonth}/${selectedDate}/${index}`}
         className="absolute right-[5%] top-[25%]"
       >
-        <i class="ri-more-2-line text-5xl text-zinc-500 hover:text-black duration-400"></i>
+        <i className="ri-more-2-line text-5xl text-zinc-500 hover:text-black duration-400"></i>
       </Link>
     </div>
   );
