@@ -30,37 +30,6 @@ function SelectedMonthDateCard({ i, daysInMonth }) {
   };
 
   const daysEvents = events[selectedMonth]?.[i + 1] ?? [];
-  console.log(daysEvents);
-
-  //   // Extract day events based on the selected month and day
-  //   const dayEvents = events[selectedMonth]?.[i + 1] ?? [];
-
-  //   const [countObject, setCountObject] = useState({
-  //     meetings: 0,
-  //     social: 0,
-  //     workshops: 0,
-  //   });
-
-  //   useEffect(() => {
-  //     // Calculate counts based on dayEvents
-  //     const initialCounts = {
-  //       meetings: 0,
-  //       social: 0,
-  //       workshops: 0,
-  //     };
-
-  //     dayEvents.forEach((event) => {
-  //       if (event.category === "meetings") {
-  //         initialCounts.meetings += 1;
-  //       } else if (event.category === "social") {
-  //         initialCounts.social += 1;
-  //       } else if (event.category === "workshops") {
-  //         initialCounts.workshops += 1;
-  //       }
-  //     });
-
-  //     setCountObject(initialCounts);
-  //   }, dayEvents); // Dependency array should include dayEvents
 
   return (
     <div

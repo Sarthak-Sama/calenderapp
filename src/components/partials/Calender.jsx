@@ -10,7 +10,6 @@ function Calendar() {
     setSelectedDate,
     setSelectedMonth,
     setSelectedDay,
-
     events,
   } = useContext(UserContext);
 
@@ -45,8 +44,8 @@ function Calendar() {
 
   return (
     <div className="w-[95%] h-[40%] mx-auto md:w-[70vw] md:h-[95vh] p-5 pt-0 bg-[#F7F7FD] flex flex-wrap justify-center overflow-y-auto">
-      {["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].map((day, i) => (
-        <div key={i} className="w-[11vw] md:w-[8vw] mx-[.5vw] mt-5 mb-1">
+      {["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"].map((day) => (
+        <div key={day} className="w-[11vw] md:w-[8vw] mx-[.5vw] mt-5 mb-1">
           <h3 className="text-center text-zinc-400 text-sm">{day}</h3>
         </div>
       ))}
@@ -63,7 +62,11 @@ function Calendar() {
       ))}
 
       {Array.from({ length: daysInMonth }, (_, i) => (
-        <SelectedMonthDateCard i={i} daysInMonth={daysInMonth} />
+        <SelectedMonthDateCard
+          key={`current-${i}`}
+          i={i}
+          daysInMonth={daysInMonth}
+        />
       ))}
 
       {Array.from(

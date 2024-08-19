@@ -5,7 +5,6 @@ import { UserContext } from "../../context/Context";
 function EventCard({ data, index }) {
   const { selectedMonth, selectedDate } = useContext(UserContext);
   const [color, setColor] = useState("#F7F7FD");
-  console.log(data);
   return (
     <div
       className={`rounded-md my-5 px-5 py-3 flex relative`}
