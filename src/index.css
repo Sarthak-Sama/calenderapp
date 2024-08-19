@@ -86,3 +86,7 @@
     transform: rotateZ(90deg);
     scale: 1.25
   }
+
+  .hvr{
+    transition-duration: 400ms;
+  }

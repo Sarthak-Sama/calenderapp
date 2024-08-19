@@ -83,12 +83,12 @@ function SelectedMonthDateCard({ i, daysInMonth }) {
       >
         {i + 1}
       </h3>
-      <div className="w-[90%] h-[60%] p-2 absolute bottom-[5%] left-[5%] hidden xl:block">
+      <div className="w-[90%] h-[60%] p-2 absolute bottom-[5%] left-[5%] hidden xl:block pt-4">
         {daysEvents.filter((event) => event.category == "meeting").length >
         0 ? (
-          <div className="text-xs flex justify-between items-center bg-purple-400 mb-1 rounded-md px-[.225vw] py-[.1vw]">
+          <div className="text-[.75vw] flex justify-between items-center bg-[#E6ECFE] hover:bg-[#a7bcfb] hvr mb-1 rounded-md px-[.5vw] py-[.25vw]">
             <h4>Meetings:</h4>
-            <span className="bg-blue-400 inline-block w-[20%] h-[20%] text-center rounded-sm">
+            <span className="bg-[#A0AEF8] inline-block w-[20%] h-[20%] text-xs text-center rounded-sm">
               {daysEvents.filter((event) => event.category == "meeting").length}
             </span>
           </div>
@@ -97,25 +97,10 @@ function SelectedMonthDateCard({ i, daysInMonth }) {
         )}
 
         {daysEvents.filter((event) => event.category == "social").length > 0 ? (
-          <div className="text-xs flex justify-between items-center bg-purple-400 mb-1 rounded-md px-[.225vw] py-[.1vw]">
+          <div className="text-[.75vw] flex justify-between items-center bg-[#FEDFED] hover:bg-[#fc9ec8] hvr mb-1 rounded-md px-[.5vw] py-[.25vw]">
             <h4>Social:</h4>
-            <span className="bg-blue-400 inline-block w-[20%] h-[20%] text-center rounded-sm">
+            <span className="bg-[#D55A8E] inline-block w-[20%] h-[20%] text-xs text-center rounded-sm">
               {daysEvents.filter((event) => event.category == "social").length}
-            </span>
-          </div>
-        ) : (
-          []
-        )}
-
-        {daysEvents.filter((event) => event.category == "workshop").length >
-        0 ? (
-          <div className="text-xs flex justify-between items-center bg-purple-400 mb-1 rounded-md px-[.225vw] py-[.1vw]">
-            <h4>Workshop:</h4>
-            <span className="bg-blue-400 inline-block w-[20%] h-[20%] text-center rounded-sm">
-              {
-                daysEvents.filter((event) => event.category == "workshop")
-                  .length
-              }
             </span>
           </div>
         ) : (
